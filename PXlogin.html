@@ -2,6 +2,21 @@
     <head>
         <title>Login Page</title>
         <script src ="pxScript.js"></script> 
+        <script>
+            function validate()
+            {  
+            var name=document.loginForm.un.value;  
+            var password=document.loginForm.pwd.value;
+            sessionStorage.setItem('username',username);
+            if((name=="Bhargav" && password=="Bhargav") || (name=="Jayanth" && password=="Jayanth"))
+            {
+                return true;
+            }
+            else{
+                return false;
+            }
+            } 
+        </script>
             <style>
                 .body{
                     align-items: center;
