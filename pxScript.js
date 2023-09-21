@@ -4,19 +4,7 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-IAM6BOO0JFWX-2");
 
-function validate()
-{  
-var name=document.loginForm.un.value;  
-var password=document.loginForm.pwd.value;
-sessionStorage.setItem('username',username);
-if((name=="Bhargav" && password=="Bhargav") || (name=="Jayanth" && password=="Jayanth"))
-{
-    return true;
-}
-else{
-    return false;
-}
-}  
+ 
 
 
 
