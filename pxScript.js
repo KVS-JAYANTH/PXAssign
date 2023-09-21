@@ -23,7 +23,7 @@ if(name=="bhargav@gmail.com" && password=="bhargav")
     alert("Valid User");
     window.location.href = 'home.html';
 }
-if(name=="jayanth@gmail.com" && password=="jayanth")
+else if(name=="jayanth@gmail.com" && password=="jayanth")
 {
     aptrinsic("identify",
     {
