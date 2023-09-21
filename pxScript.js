@@ -20,7 +20,8 @@ if(name=="bhargav@gmail.com" && password=="bhargav")
         "id":"12",
         "name":"International Business Machine"
     });
-    return true;
+    alert("Valid User");
+    window.location.href = 'home.html';
 }
 if(name=="jayanth@gmail.com" && password=="jayanth")
 {
@@ -34,10 +35,11 @@ if(name=="jayanth@gmail.com" && password=="jayanth")
         "id":"123",
         "name":"GS"
     });
-    return true;
+    alert("Valid User");
+    window.location.href = 'home.html';
 }
 else{
-    return false;
+    alert("Invalid User");
 }
 } 
 
