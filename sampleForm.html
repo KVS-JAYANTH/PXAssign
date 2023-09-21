@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Contact Page</title>
+        <style>
+            .table{
+                align-items: center;
+            }
+            .tr{
+                align-items: center;
+                background-color: beige;
+            }
+            .body{
+                align-items: center;
+                background-color: aqua;
+                padding-top: 3%;
+            }
+            .form .h2{
+                display: inline-block;
+                padding-left: 40%;
+            }
+            .topnav{
+                background: #361717;
+                padding: 5px 0 5px 10px;
+            }
+            .topnav a{
+                color : #F6F7F8;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: 'Montserrat';
+            }
+            .topnav a:hover{
+                background-color: #1BC3A7;
+            }
+            .option{
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+            </style>
+    </head>
+    <body class="body">
+        <div class="topnav">
+            <a class="option" href="home.html">Home</a>
+            <a class="option" href="sampleForm.html">Contact Section</a>
+            <a class="option" href="sampleWidget.html">Widget</a>
+            <a class="option" href="PXlogin.html">Logout</a>
+        </div>
+        <h2>Contact Section</h2>
+        <form class="form">
+            <table class="table">
+                <tr>
+                    <td>First Name :</td>
+                    <td><input type="text" name="fn" id="fn"></td>
+                </tr>
+                <tr>
+                    <td>Last Name : </td>
+                    <td><input type="text" name="ln" id="ln"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number :</td>
+                    <td><input type="tel" name="phno" id="phno"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td><input type="email" name="mail" id="mail"></td>
+                </tr>
+                <tr>
+                    <td>Country : </td>
+                    <td><select name="country" id="country" value="Select a option">
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="UK">UK</option>
+                      </select></td>
+                </tr>
+                <tr>
+                    <td>Gender :  </td>
+                    <td>
+                        <input type="radio"
+                            id="male"
+                            name="gender"> Male
+                        <input type="radio"
+                            id="female"
+                            name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Comments
+                    </td>
+                    <td>
+                        <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><input type="reset" value="Cancel"></td>
+                </tr>
+            </table>
+        </form> 
+    </body>
+</html>

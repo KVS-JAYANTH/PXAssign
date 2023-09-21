@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <title>
+        Widget
+    </title>
+    <script src="Javascript/script.js"></script>
+    <style>
+        body{
+            background: #F4F4F4;
+            margin: 0;
+            font-family: 'Montserrat';
+        }
+        .container
+        {
+            width: 780px;
+            margin:0 auto;
+            background: rgb(211, 216, 220);
+        }
+        .topnav{
+            background: #361717;
+            padding: 5px 0 5px 10px;
+        }
+        .topnav a{
+            color : #F6F7F8;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Montserrat';
+        }
+        .topnav a:hover{
+            background-color: #1BC3A7;
+        }
+        .dragred
+        {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            background-color: red;
+        }
+        .dragblue
+        {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            background-color: blue;
+        }
+        .draggreen
+        {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+            background-color: green;
+        }
+        .option{
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+        .body{
+                align-items: center;
+                background-color: aqua;
+                padding-top: 3%;
+            }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body class="body">
+    <div class="topnav">
+        <a class="option" href="home.html">Home</a>
+        <a class="option" href="sampleForm.html">Contact Section</a>
+        <a class="option" href="sampleWidget.html">Widget</a>
+        <a class="option" href="PXlogin.html">Logout</a>
+      </div>
+      <br>
+    <div class="dragred" class="ui-widget-content">
+        <p>Drag red</p>
+      </div>
+      <div class="dragblue" class="ui-widget-content">
+        <p>Drag blue</p>
+      </div>
+      <div class="draggreen" class="ui-widget-content">
+        <p>Drag Green</p>
+      </div>
+<script>
+    $( function() {
+        $( ".dragred").draggable({
+        })
+      } );
+      $( function() {
+        $( ".dragblue").draggable({
+        })
+      } );
+      $( function() {
+        $( ".draggreen").draggable({
+        })
+      } );
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <style>
+        .table{
+            align-items: center;
+        }
+        .tr{
+            align-items: center;
+            background-color: beige;
+        }
+        .body{
+            align-items: center;
+            background-color: aqua;
+            padding-top: 3%;
+        }
+        .topnav{
+                background: #361717;
+                padding: 5px 0 5px 10px;
+            }
+        .topnav a{
+            color : #F6F7F8;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: 'Montserrat';
+        }
+        .topnav a:hover{
+            background-color: #1BC3A7;
+        }
+        .option{
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+        </style>
+    </head>
+    <body class="body">
+        <script>
+            const username = sessionStorage.getItem('username');
+            if (username) {
+                const usernamePlaceholder = document.getElementById('usernamePlaceholder');
+                usernamePlaceholder.textContent = username;
+            } 
+            else {
+                console.error('Username not found in session storage.');
+            }
+        </script>
+        <div class="topnav">
+            <a class="option" href="home.html">Home</a>
+            <a class="option" href="sampleForm.html">Contact Section</a>
+            <a class="option" href="sampleWidget.html">Widget</a>
+            <a class="option" href="PXlogin.html">Logout</a>
+        </div>
+        <h1>
+            Welcome User <span id="usernamePlaceholder"></span>
+        </h1>
+    </body>
+</html>
