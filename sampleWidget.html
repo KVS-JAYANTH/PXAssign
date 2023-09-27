@@ -85,14 +85,17 @@
 <script>
     $( function() {
         $( ".dragred").draggable({
+            stop : function r() {aptrinsic('track','DragCustomEvent',{"name":"red drag","color":'red'});}
         })
       } );
       $( function() {
         $( ".dragblue").draggable({
+            stop : function r() {aptrinsic('track','DragCustomEvent',{"name":"blue drag","color":'blue'});}
         })
       } );
       $( function() {
         $( ".draggreen").draggable({
+            stop : function r() {aptrinsic('track','DragCustomEvent',{"name":"green drag","color":'green'});}
         })
       } );
     </script>
