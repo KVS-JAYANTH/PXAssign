@@ -38,6 +38,21 @@ else if(name=="jayanth@gmail.com" && password=="jayanth")
     alert("Valid User");
     window.location.href = 'home.html';
 }
+else if(name=="sbpoosa@gainsight.com" && password=="1234")
+{
+    aptrinsic("identify",
+    {
+        "id": name+"$1",
+        "email": name,
+        "firstName": "Poosa Bhargav"
+    },
+    {
+        "id":"1234",
+        "name":"GSPX"
+    });
+    alert("Valid User");
+    window.location.href = 'home.html';
+}
 else{
     alert("Invalid User");
 }
