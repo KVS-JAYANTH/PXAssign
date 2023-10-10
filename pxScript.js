@@ -14,12 +14,15 @@ if(name=="bhargav@gmail.com" && password=="bhargav")
     {
         "id": name+"$1",
         "email": name,
-        "firstName": "Bhargav"
+        "firstName": "Bhargav",
+        "plan":"Gold"
     },
     {
         "id":"12",
-        "name":"International Business Machine"
+        "name":"International Business Machine",
+        "programType":"Gold"
     });
+    aptrinsic('set', 'user', {'firstName' : 'Bhargavsp '});
     alert("Valid User");
     window.location.href = 'home.html';
 }
